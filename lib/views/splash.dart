@@ -36,10 +36,13 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
       body: Center(
         child: SizedBox(
-          height: 100.h,
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
           child: Image.asset(
             "assets/splash.png",
             fit: BoxFit.cover,
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
           ),
         ),
       ),
